@@ -1,0 +1,121 @@
+.section-card-meuclube {
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  background: linear-gradient(to left, #4a70b6, #000761);
+  color: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  padding: 20px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card-left-parceiro {
+  flex: 1;
+  min-width: 200px;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.small-text {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.big-text {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.clubeonline {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-right-parceiro {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.offer-text {
+  font-size: 1.1rem;
+  max-width: 100%;
+}
+
+.partners {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.partner-logo {
+  height: 30px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.more-text {
+  font-size: 1rem;
+}
+
+.saiba-mais-btn {
+  background-color: white;
+  color: #0046BE;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.saiba-mais-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .card-right-parceiro {
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .partners {
+    justify-content: flex-start;
+  }
+
+  .partner-logo {
+    height: 25px;
+  }
+}

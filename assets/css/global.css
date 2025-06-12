@@ -1,0 +1,45 @@
+html {
+  /* Adiciona rolagem suave para toda a página */
+  scroll-behavior: smooth; 
+  
+}
+
+:root {
+  --primary: #ff6600;
+  --primary-light: #ff8533;
+  --primary-dark: #e55c00;
+  --text-dark: #333333;
+  --text-light: #666666;
+  --background: #fae4d7;
+  --white: #ffffff;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+  --radius: 16px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+
+
+.container { 
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+

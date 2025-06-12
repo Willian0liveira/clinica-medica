@@ -1,0 +1,91 @@
+/* Sections */
+section {
+  padding: 2rem 0;
+  margin: 0;
+  right: 0;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.section-contato-main{
+margin: 0;
+padding: 0;
+}
+
+.section-title-servicos {
+  
+  text-align: center;
+  position: relative;
+
+}
+
+.section-title-servicos h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+  display: inline-block;
+  text-align: start;
+  margin-left: 50px;
+  line-height: 1.2;
+}
+
+
+.section-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+  display: inline-block;
+  text-align: start;
+  margin-left: 20px;
+  line-height: 1.2;
+}
+
+.section-title h2::after {
+  content: '';
+  display: flex;
+  width: 300px;
+  height: 3px;
+  background-color: var(--primary);
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+
+@media (max-width: 765px){
+
+.section-title-servicos {
+  text-align: start; 
+  text-align: start;
+  position: relative;
+
+}
+
+.section-title-servicos h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: var(--primary);
+  display: flex;
+  text-align: start;
+  position: relative;
+  margin-left: 80px;
+  line-height: 1.1;
+}
+
+.section-title h2::after {
+  content: '';
+  display: flex;
+  width: 200px;
+  height: 3px;
+  background-color: var(--primary);
+  margin-left: 50px;
+  left: 0;
+  margin-top: 10px;
+}
+
+
+}
+

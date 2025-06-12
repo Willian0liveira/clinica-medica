@@ -1,0 +1,168 @@
+/* Footer */
+footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  position: relative;
+  margin-top: 0;
+  padding-top: 0;
+  top: 0;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+}
+
+.footer-grid {
+  display: grid;
+  padding-top: 0;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-logo-footer { 
+            cursor: pointer;
+            height: 30px;
+            margin-left: 10px;
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+            
+        }
+
+
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.developer-credit {
+  text-align: center;
+  padding: 0.1rem;
+  margin-top: 0.0rem;
+}
+
+.developer-credit p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.developer-credit a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.developer-credit a:hover {
+  text-decoration: underline;
+}
+
+.footer-col h3 {
+  font-size: 1.2rem;
+  padding: 10px;
+  
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-col h3::after { 
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 10px; 
+  width: 40px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-col p { 
+  padding-left: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links {
+  
+  list-style: none;
+  padding: 0;
+}
+
+
+.footer-links li {
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: white;
+  padding-left: 5px;
+}
+
+.footer-hours {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.cards-image{
+ width: 100%;
+  height: auto; 
+}
+
+.day {
+  color: white;
+}
+
+.hours {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+@media (max-width: 765px){
+
+.copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.developer-credit {
+  text-align: center;
+  padding: 0.1rem;
+  margin-top: 0.0rem;
+}
+
+.developer-credit p {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.developer-credit a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.developer-credit a:hover {
+  text-decoration: underline;
+}
+
+
+}

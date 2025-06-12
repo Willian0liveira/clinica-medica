@@ -1,0 +1,128 @@
+/* Navigation */
+.nav { 
+  position: sticky;
+  top: 0px;
+  background-color: var(--primary-dark);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  height: 70px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap; /* Impede a quebra da linha */
+}
+
+.nav-logo-small img {
+  height: 40px; /* Ajuste conforme necessário */
+}
+
+.nav a { 
+  display: block; 
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+  text-transform: uppercase;
+}
+
+.container-inicio{
+             margin-left: 100px;
+
+             }
+
+.nav-links {  
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap; /* Impede que os links quebrem para a próxima linha */
+  white-space: nowrap; /* Evita que o texto quebre */
+}
+
+.nav-links li a {  
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.493);
+  font-weight: bold;
+}
+
+@media(max-width: 765px){
+
+.nav-logo-small img {
+  display: none;
+}
+
+
+.nav-links {  
+  list-style: none;
+  display: flex;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap; /* Impede que os links quebrem para a próxima linha */
+  white-space: nowrap; /* Evita que o texto quebre */
+}
+
+.nav-links li a {  
+  font-size: 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.493);
+  font-weight: bold;
+}
+
+
+}
+
+
+.nav ul { 
+   
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap; /* Mantém itens em uma linha */
+}
+
+.nav li { 
+  position: relative;
+}
+
+.nav a { 
+  padding: 0rem;
+  margin: 0rem;
+  display: block; 
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+  text-transform: uppercase;
+}
+
+.nav a:hover, .nav a.active {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: var(--primary-dark);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  transition: var(--transition);
+  transform: translateX(-50%);
+}
+
+.nav a:hover::after, .nav a.active::after {
+  width: 40%;
+}
+

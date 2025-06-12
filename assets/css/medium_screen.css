@@ -1,0 +1,43 @@
+@media (max-width: 765px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .brand { 
+    flex-direction: column;
+  }
+  .container-inicio{
+    margin-left: 0px;
+
+             }
+  .nav ul {
+    justify-content: space-between; /* Distribui espaço entre os itens do menu */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    padding: 0 10px; /* Adiciona um pouco de padding nas laterais */
+  }
+  
+  
+  .contact-form, .contact-info {
+    padding: 30px 20px;
+  }
+
+  .gold {
+    transform: scale(1);
+  }
+  
+  .plan-card {
+    width: 300px;
+  }
+
+
+
+
+
+
+
+
+
+
+}

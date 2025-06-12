@@ -1,0 +1,363 @@
+/* Estilos para a seção de planos */
+:root {
+  --primary: #ff6600;
+  --primary-dark: #e65c00;
+  --primary-light: #ff8533;
+  --secondary: #0090ff;
+  --secondary-dark: #0077d9;
+  --success: #0ba163;
+  --success-dark: #098555;
+  --white: #ffffff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+  --transition-slow: all 0.5s ease;
+  --text-light: #6c757d;
+}
+
+.section-title {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Planos a partir de R$89,00 */
+.planos-destaque {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(120deg, #ff6600, #ff9248);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.planos-destaque::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+.plans-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding: 20px 0;
+  perspective: 1000px;
+}
+
+.plan-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  width: 300px;
+  overflow: hidden;
+  transition: var(--transition-slow);
+  position: relative;
+  border: 1px solid var(--gray-200);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.plan-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--gray-300);
+}
+
+/* Estilos específicos para cada plano */
+.vital {
+  background: linear-gradient(to bottom, #ffffff, #f1f9f5);
+}
+
+.vital-plus {
+  background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+}
+
+.vital-premium {
+  background: linear-gradient(to bottom, #ffffff, #fff7f2);
+  border: 2px solid var(--primary);
+  box-shadow: 0 15px 30px rgba(255, 102, 0, 0.15);
+  transform: scale(1.02);
+  z-index: 2;
+}
+
+.vital-premium:hover {
+  transform: translateY(-15px) scale(1.04);
+}
+
+.plan-header {
+  padding: 40px 20px 30px;
+  text-align: center;
+  position: relative;
+  border-bottom: 1px solid var(--gray-200);
+  background-size: cover;
+  background-position: center;
+}
+
+.vital .plan-header {
+  background: linear-gradient(160deg, rgba(11, 161, 99, 0.1), transparent);
+}
+
+.vital-plus .plan-header {
+  background: linear-gradient(160deg, rgba(0, 144, 255, 0.1), transparent);
+}
+
+.vital-premium .plan-header {
+  background: linear-gradient(160deg, rgba(255, 102, 0, 0.1), transparent);
+}
+
+.plan-icon-image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+  transition: var(--transition);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.plan-card:hover .plan-icon-image {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.plan-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.vital .plan-name {
+  color: var(--success);
+}
+
+.vital-plus .plan-name {
+  color: var(--secondary);
+}
+
+.vital-premium .plan-name {
+  color: var(--primary);
+  font-size: 1.9rem;
+}
+
+.plan-price {
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.currency {
+  font-size: 1.4rem;
+  vertical-align: top;
+  margin-right: 3px;
+  opacity: 0.9;
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.period {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-left: 5px;
+}
+
+.plan-features {
+  padding: 30px 25px;
+  flex-grow: 1;
+}
+
+.plan-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.check-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.vital .check-icon {
+  stroke: var(--success);
+}
+
+.vital-plus .check-icon {
+  stroke: var(--secondary);
+}
+
+.vital-premium .check-icon {
+  stroke: var(--primary);
+}
+
+.plan-footer {
+  padding: 10px 25px 30px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.plan-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: var(--radius-sm);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.vital .plan-btn {
+  background-color: var(--primary);
+}
+
+.vital .plan-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.vital-plus .plan-btn {
+  background-color: var(--primary);
+}
+
+.vital-plus .plan-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.vital-premium .plan-btn {
+  background-color: var(--primary);
+}
+
+.vital-premium .plan-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.plan-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.plan-btn:hover::before {
+  left: 100%;
+}
+
+.plan-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.popular-tag {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 0 0 0 var(--radius-sm);
+  box-shadow: 0 4px 10px rgba(255, 102, 0, 0.3);
+  z-index: 3;
+  letter-spacing: 0.5px;
+}
+
+.popular-tag::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 10px;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-right: 10px solid var(--primary-dark);
+  border-bottom: 10px solid transparent;
+}
+
+/* Responsividade */
+@media screen and (max-width: 992px) {
+  .plans-container {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .planos-destaque {
+    font-size: 2rem;
+  }
+  
+  .plan-card {
+    width: 280px;
+  }
+  
+  .vital-premium {
+    transform: scale(1);
+  }
+  
+  .vital-premium:hover {
+    transform: translateY(-15px) scale(1.02);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .plans-container {
+    gap: 30px;
+  }
+  
+  .plan-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+
+}

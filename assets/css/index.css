@@ -1,0 +1,15 @@
+@import './global.css';
+@import './header.css';
+@import './navigation_bar.css';
+@import'./footer.css';
+@import './planos.css';
+@import './container_plano_empresa.css';
+@import './carousel.css';
+@import './services.css';
+@import './forms.css';
+@import './google_maps.css';
+@import './container_parceiro.css';
+@import './sections.css';
+@import './medium_screen.css';
+@import './float_action_button.css';
+
