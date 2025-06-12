@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensagem Enviada</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #e55c00;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .logo-area img {
+      height: 60px;
+      width: auto;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-area">
+      <img src="assets/img/logo.png" alt="Logo da clínica" />
+      <h1>Clínica Médica</h1>
+    </div>
+    <p>A CLINICA MEDICA agradece seu contato. Retornaremos em breve através do seu email ou telefone informado.</p>
+  </div>
+
+  <div>
+   <p style="text-align: center;position: relative; margin: 0;">Essa página se fechará automaticamente.</p>
+  </div>
+
+  <script>
+    // Redireciona para index.html após 5 segundos (5000 milissegundos)
+    setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 7000);
+  </script>
+</body>
+</html>

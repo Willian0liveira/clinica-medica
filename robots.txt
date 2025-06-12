@@ -1,0 +1,20 @@
+# robots.txt para Clínica Médica
+User-agent: *
+
+# Permitir tudo por padrão
+Allow: /
+
+# Bloquear diretórios e arquivos desnecessários para SEO
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/img/
+
+# Bloquear páginas de ancoragem que não representam conteúdo real
+Disallow: /#inicio
+Disallow: /#servicos
+Disallow: /#planos
+Disallow: /#contato
+Disallow: /#empresa
+
+# Sitemap
+Sitemap: https://clinicamedica.com.br/sitemap.xml
